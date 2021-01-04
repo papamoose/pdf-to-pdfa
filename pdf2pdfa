@@ -1,0 +1,27 @@
+#!/bin/bash
+
+a="$1"
+b="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+
+xpath=${a%/*}
+xbase=${a##*/}
+xfext=${xbase##*.}
+xpref=${xbase%.*}
+
+[ -d "$xpath" ]  || xpath='.'
+
+gs \
+  -dPDFA=1 \
+  -dPDFACompatibilityPolicy=1 \
+  -dBATCH \
+  -dNOPAUSE \
+  -dNOOUTERSAVE \
+  -DNOSAFER \
+  -sColorConverionStrategy=/UseDeviceIndependentColor \
+  -sDEVICE=pdfwrite \
+  -o "${xpath}/${xpref}.PDFA.${xfext}" \
+  ${HOME}/.local/share/pdf2pdfa/PDFA_def.ps \
+  "$1"
+
+# Required for gs 9.26 or earlier
+#  -sProcessColorModel=DeviceRGB \
