@@ -63,4 +63,4 @@ PASS /path/to/filename.PDFA.pdf
 ```
 
 ## Notes:
-- Shoutout to [Planetary Science Institute](https://sbn.psi.edu/pds/other_tools/pdf1a.html) [who seem to be doing the same thing](https://github.com/sbn-psi/data-provider-tools/tree/master/pdf2pdfa).
+- Shoutout to [Planetary Science Institute](https://sbn.psi.edu/pds/other_tools/pdf1a.html) who seem to be [doing](https://github.com/sbn-psi/data-provider-tools/tree/master/pdf2pdfa) the same thing.
