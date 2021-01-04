@@ -55,3 +55,9 @@ Make sure that is in your `$PATH`.
 ```
 ln -s $HOME/.local/verapdf/verapdf $HOME/.local/bin/verapdf
 ```
+
+#### Using verapdf to verify the conversion results
+```
+$ verapdf --format text <path/to/filename.PDFA.pdf>
+PASS /path/to/filename.PDFA.pdf
+```
