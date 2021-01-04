@@ -1,3 +1,23 @@
+## Install
+`install.sh` isn't all encompasing and only tested on linux. It should work on MacOS.
+
+#### File structure after install:
+
+```
+$HOME/.local/share/pdf2pdfa
+|- PDFA_def.ps
+|- srgb.icc
+$HOME/.local/bin
+|- pdf2pdfa
+```
+Ensure your add `$HOME/.local/bin` to `$PATH`.
+
+For example for a `bash` shell:
+```
+echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bash_profile
+```
+
+
 ## Dependencies
 
 ### 1. ghostscript
