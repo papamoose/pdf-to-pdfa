@@ -64,3 +64,5 @@ PASS /path/to/filename.PDFA.pdf
 
 ## Notes:
 - Shoutout to [Planetary Science Institute](https://sbn.psi.edu/pds/other_tools/pdf1a.html) who seem to be [doing](https://github.com/sbn-psi/data-provider-tools/tree/master/pdf2pdfa) the same thing.
+- [PDF/A Validation Rules](https://docs.verapdf.org/validation/pdfa-part1/)
+- [man ghostscript](https://www.ghostscript.com/doc/current/Use.htm)
